@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+100000.times do
+  Post.create(
+    title: Faker::Book.title,
+    date: Faker::Date.birthday(18, 65),
+    author: Faker::Book.author,
+    content: Faker::Lebowski.quote,
+    file: Faker::File.file_name,
+    country: Faker::Address.country
+  )
+end

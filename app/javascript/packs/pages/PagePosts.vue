@@ -49,9 +49,21 @@ export default {
           {
             key: 'author',
             label: 'author'
-          }
+          },
+          {
+            key: 'content',
+            label: 'content'
+          },
+          {
+            key: 'country',
+            label: 'country'
+          },
+          {
+            key: 'file',
+            label: 'file'
+          },
         ],
-      perPage: 5,
+      perPage: 10,
       fixed: true
     }
   },

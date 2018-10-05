@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def index_json
-    @posts = Post.take 10000
+    @posts = Post.limit 10000
     render json: @posts.as_json
   end
 

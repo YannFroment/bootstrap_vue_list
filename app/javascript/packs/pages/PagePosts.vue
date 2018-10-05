@@ -1,13 +1,20 @@
 <template>
   <div>
-    <h1>toto</h1>
+    {{posts}}
   </div>
 </template>
 
 <script>
-export default {
-
-}
+  export default {
+    computed: {
+      posts () {
+        return this.$store.state.posts
+      }
+    },
+    beforeCreate() {
+      this.$store.dispatch('fetchPosts')
+    }
+  }
 </script>
 
 <style>

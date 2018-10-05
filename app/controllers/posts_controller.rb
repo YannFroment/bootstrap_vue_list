@@ -7,6 +7,11 @@ class PostsController < ApplicationController
     @posts = Post.take 2
   end
 
+  def index_json
+    @posts = Post.take 2
+    render json: @posts.as_json
+  end
+
   # GET /posts/1
   # GET /posts/1.json
   def show

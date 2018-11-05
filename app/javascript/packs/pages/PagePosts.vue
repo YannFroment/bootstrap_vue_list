@@ -63,7 +63,7 @@ export default {
             label: 'file'
           },
         ],
-      perPage: 10,
+      perPage: 20,
       fixed: true
     }
   },
